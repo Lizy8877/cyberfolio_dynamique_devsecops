@@ -1,0 +1,58 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 5px;
+}
+
+.field input {
+    padding: 10px 50px 10px 10px;
+    margin-bottom: 30px;
+    background-color: #161616;
+    border-color: #292929;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+}
+
+.submit {
+    padding: 15px 50px;
+    background-color: #292929;
+    border-color: #161616;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login {
+    padding: 12px 50px;
+    background-color: #292929;
+    border-color: #161616;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.submit:active,
+.login:active {
+    background-color: #3b3b3b;
+}

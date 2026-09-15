@@ -1,0 +1,24 @@
+#reloadButton {
+    position: absolute;
+    margin-top: -50px;
+    background-color: #292929;
+    border-color: #292929;
+    border-style: solid;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#output {
+    background-color: #F7E8D0;
+    color: black;
+    max-width: 700px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}

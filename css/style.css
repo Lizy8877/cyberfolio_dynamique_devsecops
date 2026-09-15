@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+html {
+    font-family: "Funnel Display", sans-serif;
+    background-image: repeating-linear-gradient(90deg, rgba(57, 56, 56, 0.09) 0px, rgba(57, 56, 56, 0.09) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(57, 56, 56, 0.09) 0px, rgba(57, 56, 56, 0.09) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(57, 56, 56, 0.09) 0px, rgba(57, 56, 56, 0.09) 1px, transparent 1px, transparent 10px), repeating-linear-gradient(90deg, rgba(57, 56, 56, 0.09) 0px, rgba(57, 56, 56, 0.09) 1px, transparent 1px, transparent 10px), linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+    color: white;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
+header div img {
+    width: 125px;
+}
+
+header div .name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header div .descript {
+    opacity: 0.7;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 500px) {
+    header div .name {
+        font-size: 40px;
+    }
+
+    header div .descript {
+        font-size: 13px;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    padding: 10px 20px;
+    margin: 0 15px;
+    color: white;
+    border-radius: 8px;
+    background-color: #161616;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #292929;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    background-color: #1C1C1C;
+}
+
+header nav a:active {
+    background-color: #242424;
+}
+
+.fa-square-arrow-up-right {
+    color: #494949;
+}
+
+@media screen and (max-width: 450px) {
+    header nav a {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: 400px) {
+        header nav a {
+            padding: 7px 17px;
+            font-size: 10px;
+            margin: 0 7px;
+        }
+    }
+}
+
+.copyright {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: fit-content;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.copyright a {
+    color: white;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 460px) {
+    .copyright {
+        font-size: 8px;
+    }
+}

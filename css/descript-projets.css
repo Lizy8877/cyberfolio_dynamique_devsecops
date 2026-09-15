@@ -1,0 +1,137 @@
+.all-content {
+    /* Mode d'affichage flexible */
+    display: flex;
+    /* Paramètre du mode flexible permettant de choisir la direction dans le quel nos éléments enfants vont (les éléments dans la div) */
+    flex-direction: column;
+    /* Marge en haut et en bas de 100 pixels */
+    margin: 100px 0;
+}
+
+.all-content h1 {
+    /* Mets le texte au centre */
+    text-align: center;
+    /* Marge en bas de 50 pixels */
+    margin-bottom: 50px;
+    /* Change la couleur du texte */
+    color: aquamarine;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /* Paramètre du mode flexible permettant d'aligner les items par rapport à l'axe X (horizontal) */
+    align-items: center;
+    /* Paramètre du mode flexible permettant de mettre en place un espace entre les éléments enfants de la div "space-evenly : espaces égaux entre les éléments, de la gauche à la droite de l'écran */
+    justify-content: space-evenly;
+}
+
+.content img {
+    /* Largeur de la boite de 500 pixels */
+    width: 500px;
+    /* Arrondis les angles de la boite de 10 pixels */
+    border-radius: 10px;
+}
+
+.text-content {
+    /* Change la couleur du fond */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    /* Mets un espace de 20 pixels dans la boite (objectif : éloigner les bords de la box du texte) */
+    padding: 20px;
+    width: 500px;
+}
+
+.text-content h2 {
+    color: aqua;
+}
+
+@media screen and (max-width: 1160px) {
+    .content img {
+        width: 350px;
+    }
+
+    .text-content {
+        width: 400px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .text-content {
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 840px) {
+            .all-content h1 {
+                font-size: 25px;
+            }
+
+            .text-content {
+                width: 200px;
+            }
+
+            @media screen and (max-width: 670px) {
+                .content img {
+                    width: 300px;
+                }
+
+                .text-content {
+                    width: 200px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    .all-content h1 {
+                        font-size: 20px;
+                        margin: 0 auto;
+                    }
+
+                    .content {
+                        flex-direction: column;
+                    }
+
+                    .content img {
+                        width: 250px;
+                        margin: 20px 0;
+                    }
+
+                    .text-content {
+                        width: 400px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        .all-content h1 {
+                            font-size: 17px;
+                            margin: 0 auto;
+                        }
+
+                        .content {
+                            flex-direction: column;
+                        }
+
+                        .content img {
+                            width: 250px;
+                            margin: 20px 0;
+                        }
+
+                        .text-content {
+                            width: 300px;
+                        }
+
+                        @media screen and (max-width: 400px) {
+                            .content {
+                                flex-direction: column;
+                            }
+
+                            .content img {
+                                width: 250px;
+                                margin: 20px 0;
+                            }
+
+                            .text-content {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
